@@ -1,5 +1,5 @@
 # Use a Node.js base image with a specific version of Node.js
-FROM node:14
+FROM node:latest
 
 # Set the working directory to /app
 WORKDIR /app
@@ -14,4 +14,4 @@ RUN npm install
 EXPOSE 8080
 
 # Start the iTowns server when the container starts
-CMD ["npm", "run" "start"]
+CMD npm run start
